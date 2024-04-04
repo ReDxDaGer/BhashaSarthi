@@ -4,7 +4,11 @@ from googletrans import Translator
 app = Flask(__name__)
 translator = Translator()
 
-@app.route("/", methods=["GET", "POST"])
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route("/translate", methods=["GET", "POST"])
 def translate():
     if request.method == "POST":
         text = request.form["text"]
@@ -16,7 +20,19 @@ def translate():
         
         return render_template("result.html", text=text, src_lang=src_lang, dest_lang=dest_lang, translated_text=translated_text)
     else:
-        return render_template("index.html")
+        return render_template("translate.html")
+    
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+@app.route('/team')
+def team():
+    return render_template('team.html')
 
 @app.errorhandler(404)
 def page_not_found(error):
