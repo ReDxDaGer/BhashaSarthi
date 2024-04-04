@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhashaSarthi Contact</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contact.css') }}">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> 
+
+</head>
+<body>
+
+    <nav class="hide">
+        <div class="container nav__container">
+            <a href="/" class="Synapse-logo"><img id="logo_img" src="./images/Synapse logo.png" alt=""><div class="name">
+                <h4>RAIDERS</h4>
+                <h6>IIT Madras</h6>
+            </div></a>
+            <ul class="nav__menu">
+                <li class="magnet"><a href="{{url_for('index')}}">Home</a></li>
+                <li class="magnet" id="current_page"><a href="{{url_for('about')}}">About</a></li>
+                <li class="magnet"><a href="{{url_for('team')}}">Team</a></li>
+                <li class="magnet"><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <section class="contact">
+
+        <div class="container contact__container">
+            <aside class="contact__aside">
+                <div class="aside__image">
+                <img src="../static/images/contact.svg">
+            </div>
+            <h2>Contact Us</h2>
+            <p>If you have any queries, please reach out to us, we will try our best to help:</p>
+            <ul class="contact__details">
+                <li>
+                    <i class="uil uil-envelope-alt"></i>
+                    <h5><a href="mailto:culturalstudy.society@study.iitm.ac.in">Mail Raiders</a></h5>
+                </li>
+                <li>
+                    <i class="uil uil-location-point"></i>
+                        <h5>Chennai, India</h5>
+                </li>
+            </ul>
+            <ul class="contact__socials">
+                <li>
+                <a href="https://www.instagram.com/synapse_iitmbs/" target="_blank" rel="noopener noreferrer"><i class="uil uil-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/mwlite/company/synapse-the-socio-linguistic-society" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></li>
+                <li><a href="https://youtube.com/@SynapseIITM"><i class="uil uil-youtube" target="_blank" rel="noopener noreferrer"></i></a></li>
+                <li><a href="https://twitter.com/synapse_iitmbs" target="_blank" rel="noopener noreferrer"><i class="uil uil-twitter"></i></a></li>
+            </ul>   
+            </aside>
+
+            <form action="https://formspree.io/f/xeqbydkz" method="POST" class="contact__form">
+                <div class="form__name">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="Email Address" placeholder="Your Email" required>
+                <textarea name="Message" rows="7" placeholder="Message" required></textarea>
+                <button type="submit" class="btn btn-primary magnet">Send Message</button>
+            </form>
+            </div>
+    </section>
+ <!--  Gsap is needed for Basic Effects -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+ <!-- Scroll Trigger is needed for Scroll Effects -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+ <!-- Three.js is needed for 3d Effects -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+ <!-- ControlKit is needed for Debug Panel -->
+ <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+ <!-- <script  type="text/javascript"  src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script> -->
+ <!-- <script src="https://cdn.jsdelivr.net/npm/sheryjs@1.0.0-beta.0.0.8/dist/Shery.min.js"></script> -->
+ <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+ <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+    
+</body>
+</html>

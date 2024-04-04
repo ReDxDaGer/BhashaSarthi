@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhashaSarthi translator</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/translator.css') }}">
+
+    <!--Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Audiowide:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Average Sans:wght@400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson Hyperlegible:wght@400&display=swap"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--Fonts-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+</head>
+<body>
+
+<div class="container">
+    <!-- Navigation -->
+    <nav class="hide">
+        <div class="nav__container">
+            <a href="/" class="Synapse-logo">
+                <div class="name">
+                    <h4>RAIDERS</h4>
+                </div>
+            </a>
+            <ul class="nav__menu">
+                <li class="magnet"><a href="../components/index.html">Home</a></li>
+                <li class="magnet"><a href="../components/about.html">About</a></li>
+                <li class="magnet"><a href="../components/cards.html">Team</a></li>
+                <li class="magnet"><a href="../components/Contact.html">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+    <!-- Menus -->
+    <!-- Select Source Language -->
+    <div class="menus">
+        <form action="/translate" method="post">
+            <label for="text">Enter text to translate:</label>
+            <textarea name="text" placeholder="Enter text" required></textarea>
+        
+            <div class="dropdown">
+                <label for="src_lang">Source Language:</label>
+                <select name="src_lang" class="menu" required>
+                    <option value="" disabled selected>Select Source Language</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="bn">Bengali</option>
+                    <!-- Add more Indian languages here -->
+                </select>
+            </div>
+        
+            <div class="dropdown">
+                <label for="dest_lang">Destination Language:</label>
+                <select name="dest_lang" class="menu" required>
+                    <option value="" disabled selected>Select Destination Language</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="bn">Bengali</option>
+                    <option value="mr">Marathi</option>
+                    <option value="kn">Kannada</option>
+                    <option value="te">Telugu</option>
+                    <option value="ne">Nepali</option>
+                    <option value="pa">Punjabi</option>
+                    <option value="ta">Tamil</option>
+                    <option value="gu">Gujarati</option>
+                    <!-- Add more Indian languages here -->
+                </select>
+            </div>
+        
+            <!-- Add submit button here -->
+            <button type="submit" class="magnet">Translate</button>
+        </form>   
+    </div>
+</div>
+
+<!-- JS Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<script src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+</body>
+</html>

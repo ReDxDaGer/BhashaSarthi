@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}"> -->
     <title>Translation Result</title>
+
 </head>
 <body>
-    <div id="main">
-        <div class="container">
-            <h1>Translation Result</h1>
-            <p><strong>Original Text:</strong><br>{{ text }}</p>
-            <p><strong>Source Language:</strong> {{ src_lang }}</p>
-            <p><strong>Destination Language:</strong> {{ dest_lang }}</p>
-            <p><strong>Translated Text:</strong><br>{{ translated_text }}</p>
-            <a href="/">Translate another text</a>
-        </div>
-    </div>
+    <h1>Translation Result</h1>
+    <p><strong>Original Text:</strong><br>{{ text }}</p>
+    <p><strong>Source Language:</strong> {{ src_lang }}</p>
+    <p><strong>Destination Language:</strong> {{ dest_lang }}</p>
+    <p><strong>Translated Text:</strong><br>{{ translated_text }}</p>
+    <a href="/">Translate another text</a>
 </body>
 </html>
