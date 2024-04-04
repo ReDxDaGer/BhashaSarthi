@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhashaSarthi</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/about.css') }}">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- linking stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+
+</head>
+<body>
+
+    <nav class="hide">
+        <div class="container nav__container">
+            <a href="/" class="Synapse-logo"><img id="logo_img" src="./images/Synapse logo.png" alt=""><div class="name">
+                <h4>RAIDERS</h4>
+                <h6>IIT Madras</h6>
+            </div></a>
+            <ul class="nav__menu">
+                <li class="magnet"><a href="{{url_for('index')}}">Home</a></li>
+                <li class="magnet" id="current_page"><a href="{{url_for('about')}}">About</a></li>
+                <li class="magnet"><a href="{{url_for('team')}}">Team</a></li>
+                <li class="magnet"><a href="{{url_for('contact')}}">Contact</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                    <h1>Hola SIH - 2023 </h1>
+                    <p>
+                        Welcome to the Official Website of RAIDERS. RAIDERS is the team representing <strong>Indian Institute of Technology Madras</strong> in the <strong>Smart India Hackathon 2023</strong> our problem statement comes under 
+                        the &ensp;<strong>Ministry of Commerce</strong> our solution focuses on <strong>Developing a software that can translate resource material and other texts from English to other Indian regional languages. </strong>,
+                    </p>                    
+                        <!-- <p>Let's take a step forward and make Synapse a healthy family.</p> -->
+                        <a href="https://forms.gle/25ethkjjT33y68cQ6" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Lets Goo!!</a>
+            </div>
+            <div class="header__right">
+                <div class="header_right-image">
+                    <img src="../images/header1.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--================================End of Header=============================================================-->
+
+    <section class="categories">
+        <div class="container categories_container">
+            <div class="categories_left">
+                <h1>Goals</h1>
+                
+                <p>BhashaSarthi has a diverse range of goals. To enrich its members with knowledge and help them become a 
+                better global citizen.
+                </p>
+                <a href="#" class="btn magnet">Learn More</a>
+            </div>
+            <div class="categories_right">
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-user-square"></i></span>
+                    <h5>Socio-Linguistic Knowledge</h5><p>Our Primary focus is on enhancing and engaging the Socio-Linguistic Knowledge and Social Skills among our members.</p>
+                </article>
+
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-user-square"></i></span>
+                    <h5>Language Awareness</h5><p>We also emphasise on improving language 
+                        education policies and practices to ensure that they are inclusive and culturally sensitive</p>
+                </article>
+                <article class="category">
+                    <span class="category_icon"><i class="uil uil-user-square"></i></span>
+                    <h5>Global Perspective</h5><p>Collaborate with organizations to address global cultural
+                        and geographical challenges, such as climate change and cultural preservation.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs">
+        <h2>Frequently asked Questions</h2>
+        <div class="container faqs__container">
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Which Informative pieces will we get if we are a member of the RAIDERS ?</h4>
+                    <p>As a member of RAIDERS, you will be discussing about issues all over the globe, and familiarizing 
+                        yourself with Geography, Languages, and Cultural History, and the philosophies .
+                    </p>
+                </div>
+            </article>
+    
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What activities are membership oriented in the RAIDERS ?</h4>
+                    <p>You'll be getting weekly articles written by the Core Team Members and regular Group Discussions 
+                        with Book Reading Sessions would be conducted to ensure an informative atmosphere.</p>
+                </div>
+            </article>
+    
+    
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What skills will we enhance if we become a part of the RAIDERS ?</h4>
+                    <p>You'll enhance Oratory Skills, Debating Skills, Socio-Linguistic Knowledge and Critical Thinking amongst yourself via BhashaSarthi.</p>
+                </div>
+            </article>
+       </div>
+    </section>
+    
+        <!--=================================FOOTER==========================================================-->
+    
+    <footer> 
+    <div class="footer__copyright">
+        <small>Made with 💙 by <a href="https://github.com/ReDxdaGer" target="_blank" rel="noopener noreferrer">Yash Mehrotra</a>  and <a href="http://github.com/Felicitatem" target="_blank" rel="noopener noreferrer">Samriddhi</a><a href="https://github.com/Synapse-society/Synapse" target="_blank" rel="noopener noreferrer"><img src="./images/github.png" alt=""></a> </small>
+
+    <!--  Gsap is needed for Basic Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Scroll Trigger is needed for Scroll Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Three.js is needed for 3d Effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+    <!-- ControlKit is needed for Debug Panel -->
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <!-- <script  type="text/javascript"  src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sheryjs@1.0.0-beta.0.0.8/dist/Shery.min.js"></script> -->
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+
+    <script src="{{ url_for('static', filename='js/about.js') }}"></script>
+    
+</body>
+</html>
