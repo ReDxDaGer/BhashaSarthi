@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    min-height: 100vh;
+    width: 100%;
+}
+nav .Synapse-logo{
+    text-decoration: none;
+    font-size: 35px;
+    color: #23222a;
+}
+nav {
+    background: transparent;
+    width: 100vw;
+    height: 6rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    padding: 0.9rem ;
+    z-index: 9999;
+}
+
+
+.window-scroll{
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+    transition: var(--transition);
+
+}
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav button {
+    display: none;
+}
+
+nav ul button {
+    background: transparent;
+    background: var(--color-success);
+    color: var(--color-danger-variant);
+    font-size: 0.9rem;
+    font-weight: 600;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--color-success);
+    border-radius: 5px;
+}
+
+nav ul button:hover {
+    color: var(--color-white);
+    border-color: var(--color-danger-variant);
+}
+nav ul li{
+    list-style: none;
+}
+.nav__menu {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.nav__menu a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: var(--transition);
+    font-weight: bold;
+    color: #23222a;
+    font-size: 18px;
+}
+nav ul button a {
+    all: unset;
+}
+
+.nav__menu a:hover {
+    color: var(--color-bg2);
+}
+
+#current_page {
+    position: relative;
+}
+
+#current_page::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -20%;
+    bottom: calc(0.9rem - 49px);
+    width: 150%;
+    height: 3px;
+    background: rgba(119, 144, 188, 0.31);
+    box-shadow: 0 -3px 10px 5px rgba(119, 144, 188, 0.11);
+}
