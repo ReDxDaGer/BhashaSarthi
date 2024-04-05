@@ -104,3 +104,91 @@ nav ul button a {
     background: rgba(119, 144, 188, 0.31);
     box-shadow: 0 -3px 10px 5px rgba(119, 144, 188, 0.11);
 }
+.menus {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    background-color: #fff; /* Changed background color to white */
+    width: 90%; /* Adjusted width */
+    max-width: 500px; /* Added max-width for better responsiveness */
+    padding: 20px; /* Added padding for spacing */
+    border-radius: 10px; /* Added border-radius for rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Added box shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px; /* Increased font size for labels */
+    margin-bottom: 10px; /* Added margin bottom for spacing */
+}
+
+form textarea,
+form select {
+    width: calc(100% - 20px); /* Adjusted width to fit within form */
+    padding: 10px; /* Added padding for spacing */
+    margin-bottom: 20px; /* Added margin bottom for spacing */
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    border: 1px solid #ccc; /* Added border for clarity */
+}
+
+form button[type="submit"] {
+    background-color: #23222a; /* Changed background color to match container */
+    color: #fff; /* Changed text color to white */
+    padding: 10px 20px; /* Added padding for spacing */
+    border: none; /* Removed border */
+    border-radius: 5px; /* Added border-radius for rounded corners */
+    cursor: pointer; /* Added cursor pointer for interaction */
+    transition: background-color 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+form button[type="submit"]:hover {
+    background-color: #4a4a4a; /* Darkened background color on hover */
+}
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    nav {
+        height: auto;
+        padding: 1rem 0.5rem;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .nav__container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav__menu a {
+        font-size: 1rem;
+    }
+
+    #current_page::after {
+        left: 0;
+        bottom: calc(100% + 5px);
+        width: 100%;
+        height: 2px;
+        background: rgba(119, 144, 188, 0.31);
+        box-shadow: 0 -2px 5px 2px rgba(119, 144, 188, 0.11);
+    }
+}

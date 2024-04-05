@@ -46,8 +46,10 @@
             </div>
         </nav>
         <div id="page1">
-            <h1>You say,</h1><br>
-            <h1>we Translate</h1>
+            <div id="header">
+                <h1>You say,</h1><br>
+                <h1>we Translate</h1>
+            </div>
             <div class="btn">
                 <a href="{{url_for('translate')}}" class="magnet">
                     <h2>lets Translate</h2>
@@ -108,5 +110,16 @@
     <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
 
     <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    <script>
+        function h1Animation(){
+            gsap.from("#header",{
+                y:20,
+                opacity:0,
+                delay:1,
+                duration:0.5,    
+                stagger:0.3
+        })}
+        h1Animation();
+    </script>
 </body>
 </html>

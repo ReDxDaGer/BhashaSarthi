@@ -34,14 +34,7 @@ function cardAnimation(){
         stagger:0.1
     })
 }
-function h1Animation(){
-    gsap.from("#page1 h1",{
-        y:0,
-        opacity:1,
-        delay:1,
-        duration:0.5,    
-        stagger:0.3
-    })}
+
 function inputCardAnimation(){
     gsap.from('.slider',{
         y:100,
@@ -126,7 +119,5 @@ translateButtonAnimation();
 cardAnimation();
 navAnimation();
 bttnAnimation();
-
-h1Animation();
 inputBoxAnimationm();
 inputBoxAnimationm2();
